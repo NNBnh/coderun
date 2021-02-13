@@ -29,7 +29,7 @@
 
 # Values
 FULL=$(realpath "$1")
-DIR="${FULL%/*}"
+DIRECTORY="${FULL%/*}"
 FILE="${FULL##*/}"
 NAME="${FILE%.*}"
 EXTENSION=$(printf '%s' "$FILE" | sed -e "s/^$NAME\.*//" -e 's/+/p/g' -e 's/-/_/g')
@@ -39,4 +39,4 @@ EXTENSION=$(printf '%s' "$FILE" | sed -e "s/^$NAME\.*//" -e 's/+/p/g' -e 's/-/_/
 eval "$(eval "printf '%s' \"\$CODERUN_$EXTENSION\"")"
 
 
-exit 0 # 42!!!
+exit 0
