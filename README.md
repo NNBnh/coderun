@@ -1,24 +1,24 @@
 <h1 align="center"><i>Coderun</i></h1>
-<p align="center">Code runner CLI</p>
+<p align="center">Code runner CLI that can run any languages</p>
 <p align="center"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"> <img src="https://img.shields.io/github/languages/top/NNBnh/coderun?logo=gnu-bash&labelColor=073551&color=4EAA25&logoColor=FFFFFF&style=for-the-badge" alt="Shell: 100%"> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
 <p align="center"><img src="https://img.shields.io/github/watchers/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/stars/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/forks/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/issues/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></p>
 
 ## About
-**Coderun** is a code runner that can run any languages.
+**Coderun** is a code runner CLI that can run any languages.
 
 ## Story
 After a long time searching for something like a CLI's version [Code Runner](https://github.com/formulahendry/vscode-code-runner) asking people on [r/kakoune](https://www.reddit.com/r/kakoune/comments/kuh4km/is_there_anything_like_code_runner_for_kakoune) and still doesn't find it, I decided to create my own with only **8 lines** of [`pure sh`](https://github.com/dylanaraps/pure-sh-bible):
 
-> ```sh
-> #!/bin/sh
-> FULL=$(realpath "$1")
-> DIRECTORY="${FULL%/*}"
-> FILE="${FULL##*/}"
-> NAME="${FILE%.*}"
-> EXTENSION=$(printf '%s' "$FILE" | sed -e "s/^$NAME\.*//" -e 's/+/p/g' -e 's/-/_/g')
-> eval "$(eval "printf '%s' \"\$CODERUN_$EXTENSION\"")"
-> exit 0
-> ```
+```sh
+#!/bin/sh
+FULL=$(realpath "$1")
+DIRECTORY="${FULL%/*}"
+FILE="${FULL##*/}"
+NAME="${FILE%.*}"
+EXTENSION=$(printf '%s' "$FILE" | sed -e "s/^$NAME\.*//" -e 's/+/p/g' -e 's/-/_/g')
+eval "$(eval "printf '%s' \"\$CODERUN_$EXTENSION\"")"
+exit 0
+```
 
 and a [Kakoune](http://kakoune.org) plugin: [`coderun.kak`](https://github.com/NNBnh/coderun.kak).
 
@@ -76,7 +76,7 @@ Coderun is configured through environment variables: `export CODERUN_<extension>
   - From `-` to `_` (e.g: `php-s => php_s`)
 
 `<method>`:
-- Keep in mind that the method will be run through `eval` (e.g: `// => /`)
+- Keep in mind that the `<method>` will be run through `eval` (e.g: `// => /`)
 - Supported parameters:
 
 |  Parameter  |      Example     |   Description  |
