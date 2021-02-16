@@ -92,6 +92,7 @@ Examples:
 ```sh
 export CODERUN_="chmod +x \$FULL && \$FULL"
 export CODERUN_sh="$CODERUN_"
+export CODERUN_textart="sh \$FULL"
 export CODERUN_bash="bash \$FULL"
 export CODERUN_zsh="zsh \$FULL"
 export CODERUN_fish="fish \$FULL"
