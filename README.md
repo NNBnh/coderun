@@ -1,6 +1,6 @@
 <h1 align="center"><i>Coderun</i></h1>
 <p align="center">Code runner CLI that can run any languages</p>
-<p align="center"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"> <img src="https://img.shields.io/github/languages/top/NNBnh/coderun?logo=gnu-bash&labelColor=073551&color=4EAA25&logoColor=FFFFFF&style=for-the-badge" alt="Shell: 100%"> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
+<p align="center"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
 <p align="center"><img src="https://img.shields.io/github/watchers/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/stars/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/forks/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/issues/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></p>
 
 ## About
@@ -55,7 +55,19 @@ ln -s ~/.local/share/coderun/coderun ~/.local/bin/coderun
 ```
 
 #### Package manager
-`#TODO`
+For [`bpkg`](https://github.com/bpkg/bpkg) user:
+
+```sh
+bpkg install NNBnh/coderun
+```
+
+For [Basher](https://github.com/bpkg/bpkg) user:
+
+```sh
+basher install NNBnh/coderun
+```
+
+###### If you can and want to port Coderun to other package managers, feel free to do so.
 
 ## Usage
 Run `coderun` in the terminal:
