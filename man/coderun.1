@@ -1,0 +1,270 @@
+.TH CODERUN "1" "2021" "NNB" "User Commands"
+.SH NAME
+Coderun \- Code runner CLI that can run any languages
+.SH SYNOPSIS
+.B coderun FILE
+.SH DESCRIPTION
+Coderun is a code runner CLI that can run any languages.
+.PP
+NOTE: Coderun out of the box cannot run code, you need to configure it.
+.SH ENVIRONMENT VARIABLES
+\fBCODERUN_<extension>\fR
+Set the method of the extension.
+.SH EXAMPLES
+export CODERUN_="chmod +x \\$FULL && \\$FULL"
+.TP
+export CODERUN_sh="$CODERUN_"
+.TP
+export CODERUN_textart="sh \\$FULL"
+.TP
+export CODERUN_bash="bash \\$FULL"
+.TP
+export CODERUN_zsh="zsh \\$FULL"
+.TP
+export CODERUN_fish="fish \\$FULL"
+.TP
+export CODERUN_js="node \\$FULL"
+.TP
+export CODERUN_cjs="$CODERUN_js"
+.TP
+export CODERUN_mjs="$CODERUN_js"
+.TP
+export CODERUN_java="cd \\$DIRECTORY && javac \\$FILE && java \\$NAME"
+.TP
+export CODERUN_class="$CODERUN_java"
+.TP
+export CODERUN_jar="$CODERUN_java"
+.TP
+export CODERUN_c="cd \\$DIRECTORY && gcc \\$FILE -o \\$NAME && \\$DIRECTORY/\\$NAME"
+.TP
+export CODERUN_h="$CODERUN_c"
+.TP
+export CODERUN_cc="cd \\$DIRECTORY && g++ \\$FILE -o \\$NAME && \\$DIRECTORY/\\$NAME"
+.TP
+export CODERUN_C="$CODERUN_cc"
+.TP
+export CODERUN_cpp="$CODERUN_cc"
+.TP
+export CODERUN_cxx="$CODERUN_cc"
+.TP
+export CODERUN_hh="$CODERUN_cc"
+.TP
+export CODERUN_H="$CODERUN_cc"
+.TP
+export CODERUN_hpp="$CODERUN_cc"
+.TP
+export CODERUN_hxx="$CODERUN_cc"
+.TP
+export CODERUN_m="cd \\$DIRECTORY && gcc -framework Cocoa \\$FILE -o \\$NAME && \\$DIRECTORY/\\$NAME"
+.TP
+export CODERUN_mm="$CODERUN_m"
+.TP
+export CODERUN_M="$CODERUN_m"
+.TP
+export CODERUN_php="php \\$FULL"
+.TP
+export CODERUN_phtml="$CODERUN_php"
+.TP
+export CODERUN_php3="$CODERUN_php"
+.TP
+export CODERUN_php4="$CODERUN_php"
+.TP
+export CODERUN_php5="$CODERUN_php"
+.TP
+export CODERUN_php7="$CODERUN_php"
+.TP
+export CODERUN_phps="$CODERUN_php"
+.TP
+export CODERUN_php_s="$CODERUN_php"
+.TP
+export CODERUN_pht="$CODERUN_php"
+.TP
+export CODERUN_phar="$CODERUN_php"
+.TP
+export CODERUN_py="python -u \\$FULL"
+.TP
+export CODERUN_pyi="$CODERUN_py"
+.TP
+export CODERUN_pyc="$CODERUN_py"
+.TP
+export CODERUN_pyd="$CODERUN_py"
+.TP
+export CODERUN_pyo="$CODERUN_py"
+.TP
+export CODERUN_pyw="$CODERUN_py"
+.TP
+export CODERUN_pyz="$CODERUN_py"
+.TP
+export CODERUN_perl="perl \\$FULL"
+.TP
+export CODERUN_plx="$CODERUN_perl"
+.TP
+export CODERUN_pl="$CODERUN_perl"
+.TP
+export CODERUN_pm="$CODERUN_perl"
+.TP
+export CODERUN_xs="$CODERUN_perl"
+.TP
+export CODERUN_t="$CODERUN_perl"
+.TP
+export CODERUN_pod="$CODERUN_perl"
+.TP
+export CODERUN_rb="ruby \\$FULL"
+.TP
+export CODERUN_go="go run \\$FULL"
+.TP
+export CODERUN_gccgo="$CODERUN_go"
+.TP
+export CODERUN_lua="lua \\$FULL"
+.TP
+export CODERUN_groovy="groovy \\$FULL"
+.TP
+export CODERUN_gvy="$CODERUN_groovy"
+.TP
+export CODERUN_gy="$CODERUN_groovy"
+.TP
+export CODERUN_gsh="$CODERUN_groovy"
+.TP
+export CODERUN_ps1="powershell -ExecutionPolicy ByPass -File \\$FULL"
+.TP
+export CODERUN_ps1xml="$CODERUN_ps1"
+.TP
+export CODERUN_psc1="$CODERUN_ps1"
+.TP
+export CODERUN_psd1="$CODERUN_ps1"
+.TP
+export CODERUN_psm1="$CODERUN_ps1"
+.TP
+export CODERUN_pssc="$CODERUN_ps1"
+.TP
+export CODERUN_psrc="$CODERUN_ps1"
+.TP
+export CODERUN_cdxml="$CODERUN_ps1"
+.TP
+export CODERUN_cmd="cmd /c \\$FULL"
+.TP
+export CODERUN_bat="$CODERUN_cmd"
+.TP
+export CODERUN_btm="$CODERUN_cmd"
+.TP
+export CODERUN_fsi="fsi \\$FULL"
+.TP
+export CODERUN_fs="$CODERUN_fsi"
+.TP
+export CODERUN_fsx="$CODERUN_fsi"
+.TP
+export CODERUN_fsscript="$CODERUN_fsi"
+.TP
+export CODERUN_cs="scriptcs \\$FULL"
+.TP
+export CODERUN_csx="$CODERUN_cs"
+.TP
+export CODERUN_vbs="cscript //Nologo \\$FULL"
+.TP
+export CODERUN_vbe="$CODERUN_vbs"
+.TP
+export CODERUN_wsf="$CODERUN_vbs"
+.TP
+export CODERUN_wsc="$CODERUN_vbs"
+.TP
+export CODERUN_ts="ts-node \\$FULL"
+.TP
+export CODERUN_tsx="$CODERUN_ts"
+.TP
+export CODERUN_coffee="coffee \\$FULL"
+.TP
+export CODERUN_litcoffee="$CODERUN_coffee"
+.TP
+export CODERUN_scala="scala \\$FULL"
+.TP
+export CODERUN_sc="$CODERUN_scala"
+.TP
+export CODERUN_swift="swift \\$FULL"
+.TP
+export CODERUN_jl="julia \\$FULL"
+.TP
+export CODERUN_cr="crystal \\$FULL"
+.TP
+export CODERUN_ml="ocaml \\$FULL"
+.TP
+export CODERUN_mli="$CODERUN_ml"
+.TP
+export CODERUN_r="Rscript \\$FULL"
+.TP
+export CODERUN_rdata="$CODERUN_r"
+.TP
+export CODERUN_rds="$CODERUN_r"
+.TP
+export CODERUN_rda="$CODERUN_r"
+.TP
+export CODERUN_scpt="osascript \\$FULL"
+.TP
+export CODERUN_scptd="$CODERUN_scpt"
+.TP
+export CODERUN_applescript="$CODERUN_scpt"
+.TP
+export CODERUN_clj="lein exec \\$FULL"
+.TP
+export CODERUN_cljs="$CODERUN_clj"
+.TP
+export CODERUN_cljc="$CODERUN_clj"
+.TP
+export CODERUN_edn="$CODERUN_clj"
+.TP
+export CODERUN_hx="haxe --cwd \\$DIRECTORY --run \\$NAME"
+.TP
+export CODERUN_hxml="$CODERUN_hx"
+.TP
+export CODERUN_rs="cd \\$DIRECTORY && rustc \\$FILE && \\$DIRECTORY/\\$NAME"
+.TP
+export CODERUN_rlib="$CODERUN_rs"
+.TP
+export CODERUN_rkt="racket \\$FULL"
+.TP
+export CODERUN_scm="csi -script \\$FULL"
+.TP
+export CODERUN_ss="$CODERUN_scm"
+.TP
+export CODERUN_ahk="autohotkey \\$FULL"
+.TP
+export CODERUN_au3="autoit3 \\$FULL"
+.TP
+export CODERUN_dart="dart \\$FULL"
+.TP
+export CODERUN_pp="cd \\$DIRECTORY && fpc \\$FILE && \\$DIRECTORY/\\$NAME"
+.TP
+export CODERUN_pas="$CODERUN_pp"
+.TP
+export CODERUN_inc="$CODERUN_pp"
+.TP
+export CODERUN_d="cd \\$DIRECTORY && dmd \\$FILE && \\$DIRECTORY/\\$NAME"
+.TP
+export CODERUN_hs="runhaskell \\$FULL"
+.TP
+export CODERUN_lhs="$CODERUN_hs"
+.TP
+export CODERUN_nim="nim compile --verbosity:0 --hints:off --run \\$FULL"
+.TP
+export CODERUN_nims="$CODERUN_nim"
+.TP
+export CODERUN_nimbls="$CODERUN_nim"
+.TP
+export CODERUN_lisp="sbcl --script \\$FULL"
+.TP
+export CODERUN_kit="kitc --run \\$FULL"
+.TP
+export CODERUN_v="v run \\$FULL"
+.TP
+export CODERUN_sass="sass --style expanded \\$FULL"
+.TP
+export CODERUN_scss="scss --style expanded \\$FULL"
+.TP
+export CODERUN_less="cd \\$DIRECTORY && lessc \\$FILE \\$NAME.css"
+.TP
+export CODERUN_f="cd \\$DIRECTORY && gfortran \\$FILE -o \\$NAME && \\$DIRECTORY/\\$NAME"
+.TP
+export CODERUN_for="$CODERUN_f"
+.TP
+export CODERUN_f90="$CODERUN_f"
+.SH REPORTING BUGS
+Report bugs to https://github.com/NNBnh/coderun/issues
