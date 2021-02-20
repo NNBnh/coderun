@@ -11,17 +11,35 @@ NOTE: Coderun out of the box cannot run code, you need to configure it.
 \fBCODERUN_<extension>\fR
 Set the method of the extension.
 .SH EXAMPLES
-export CODERUN_="chmod +x \\$FULL && \\$FULL"
+export CODERUN_="chmod +x \$FULL && \$FULL"
 .TP
 export CODERUN_sh="$CODERUN_"
 .TP
-export CODERUN_textart="sh \\$FULL"
+export CODERUN_textart="$CODERUN_sh"
 .TP
-export CODERUN_bash="bash \\$FULL"
+export CODERUN_bash="bash \$FULL"
 .TP
-export CODERUN_zsh="zsh \\$FULL"
+export CODERUN_zsh="zsh \$FULL"
 .TP
-export CODERUN_fish="fish \\$FULL"
+export CODERUN_fish="fish \$FULL"
+.TP
+export CODERUN_1="man \$FULL"
+.TP
+export CODERUN_2="$CODERUN_1"
+.TP
+export CODERUN_3="$CODERUN_1"
+.TP
+export CODERUN_4="$CODERUN_1"
+.TP
+export CODERUN_5="$CODERUN_1"
+.TP
+export CODERUN_6="$CODERUN_1"
+.TP
+export CODERUN_7="$CODERUN_1"
+.TP
+export CODERUN_8="$CODERUN_1"
+.TP
+export CODERUN_9="$CODERUN_1"
 .TP
 export CODERUN_js="node \\$FULL"
 .TP
