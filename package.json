@@ -1,0 +1,10 @@
+
+{
+  "name": "coderun",
+  "version": "1.0.1",
+  "description": "Code runner CLI that can run any languages",
+  "global": "true",
+  "scripts": ["bin/coderun"],
+  "files": ["man/coderun.1"],
+  "install": "make install"
+}

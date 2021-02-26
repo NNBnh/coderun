@@ -6,8 +6,12 @@
 ## About
 **Coderun** is a code runner CLI that can run any languages.
 
+<p align="center"><a href="https://user-images.githubusercontent.com/43980777/108585543-92714300-737b-11eb-8296-1bf0cf79437f.mp4"><img src="https://user-images.githubusercontent.com/43980777/108586276-e7af5380-737f-11eb-9acd-c248b7a1c720.png"></a></p>
+
+###### [Click to watch demo](https://user-images.githubusercontent.com/43980777/108585543-92714300-737b-11eb-8296-1bf0cf79437f.mp4)
+
 ## Story
-After a long time searching for something like a CLI's version [Code Runner](https://github.com/formulahendry/vscode-code-runner) asking people on [r/kakoune](https://www.reddit.com/r/kakoune/comments/kuh4km/is_there_anything_like_code_runner_for_kakoune) and still doesn't find it, I decided to create my own with only **8 lines** of [`pure sh`](https://github.com/dylanaraps/pure-sh-bible):
+After a long time searching for something like a CLI's version [Code Runner](https://github.com/formulahendry/vscode-code-runner) asking people on [r/kakoune](https://www.reddit.com/r/kakoune/comments/kuh4km/is_there_anything_like_code_runner_for_kakoune) and still doesn't find it, I decided to create my own with only **8 lines** of [`portable sh`](https://github.com/dylanaraps/pure-sh-bible):
 
 ```sh
 #!/bin/sh
@@ -104,10 +108,19 @@ Examples:
 ```sh
 export CODERUN_="chmod +x \$FULL && \$FULL"
 export CODERUN_sh="$CODERUN_"
-export CODERUN_textart="sh \$FULL"
+export CODERUN_textart="$CODERUN_sh"
 export CODERUN_bash="bash \$FULL"
 export CODERUN_zsh="zsh \$FULL"
 export CODERUN_fish="fish \$FULL"
+export CODERUN_1="man \$FULL"
+export CODERUN_2="$CODERUN_1"
+export CODERUN_3="$CODERUN_1"
+export CODERUN_4="$CODERUN_1"
+export CODERUN_5="$CODERUN_1"
+export CODERUN_6="$CODERUN_1"
+export CODERUN_7="$CODERUN_1"
+export CODERUN_8="$CODERUN_1"
+export CODERUN_9="$CODERUN_1"
 export CODERUN_js="node \$FULL"
 export CODERUN_cjs="$CODERUN_js"
 export CODERUN_mjs="$CODERUN_js"
