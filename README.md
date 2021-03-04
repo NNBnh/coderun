@@ -1,7 +1,7 @@
 <h1 align="center"><i>Coderun</i></h1>
 <p align="center">Code runner CLI that can run any languages</p>
-<p align="center"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
-<p align="center"><img src="https://img.shields.io/github/watchers/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/stars/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/forks/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/issues/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></p>
+<p align="center"><a href="https://github.com/NNBnh/coderun/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
+<p align="center"><a href="https://github.com/NNBnh/coderun/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/network/members"><img src="https://img.shields.io/github/forks/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/issues"><img src="https://img.shields.io/github/issues/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
 
 ## About
 **Coderun** is a code runner CLI that can run any languages.
@@ -47,7 +47,7 @@ and a [Kakoune](http://kakoune.org) plugin: [`coderun.kak`](https://github.com/N
 - Option 1: using `curl`
 
 ```sh
-curl https://raw.githubusercontent.com/NNBnh/coderun/main/coderun > ~/.local/bin/coderun
+curl https://raw.githubusercontent.com/NNBnh/coderun/main/bin/coderun > ~/.local/bin/coderun
 chmod +x ~/.local/bin/coderun
 ```
 
@@ -55,7 +55,7 @@ chmod +x ~/.local/bin/coderun
 
 ```sh
 git clone https://github.com/NNBnh/coderun.git ~/.local/share/coderun
-ln -s ~/.local/share/coderun/coderun ~/.local/bin/coderun
+ln -s ~/.local/share/coderun/bin/coderun ~/.local/bin/coderun
 ```
 
 #### Package manager
@@ -255,6 +255,6 @@ Special thanks to:
 
 ---
 
-> <h1 align="center">Made with :heart: by <a href="https://github.com/NNBnh"><i>NNB</i></a></h1>
+> <h1 align="center">Made with ❤️ by <a href="https://github.com/NNBnh"><i>NNB</i></a></h1>
 >
 > <p align="center"><a href="https://www.buymeacoffee.com/nnbnh"><img src="https://img.shields.io/badge/buy_me_a_coffee%20-%23F7CA88.svg?logo=buy-me-a-coffee&logoColor=333333&style=for-the-badge" alt="Buy Me a Coffee"></p>
