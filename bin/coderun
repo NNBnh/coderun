@@ -27,8 +27,8 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-# Values
-FULL=$(realpath "$1")
+# Value
+FULL="$(dirname "$1")/$(basename "$1")"
 DIRECTORY=$(dirname "$1")
 FILE=$(basename "$1")
 NAME="${FILE%.*}"

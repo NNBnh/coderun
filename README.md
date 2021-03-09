@@ -15,7 +15,7 @@ After a long time searching for something like a CLI's version [Code Runner](htt
 
 ```sh
 #!/bin/sh
-FULL=$(realpath "$1")
+FULL="$(dirname "$1")/$(basename "$1")"
 DIRECTORY=$(dirname "$1")
 FILE=$(basename "$1")
 NAME="${FILE%.*}"
