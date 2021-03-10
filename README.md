@@ -10,7 +10,7 @@
 
 ###### [Click to watch demo](https://user-images.githubusercontent.com/43980777/108585543-92714300-737b-11eb-8296-1bf0cf79437f.mp4)
 
-## Story
+### Story
 After a long time searching for something like a CLI's version [Code Runner](https://github.com/formulahendry/vscode-code-runner) asking people on [r/kakoune](https://www.reddit.com/r/kakoune/comments/kuh4km/is_there_anything_like_code_runner_for_kakoune) and still doesn't find it, I decided to create my own with only **8 lines** of [`portable sh`](https://github.com/dylanaraps/pure-sh-bible):
 
 ```sh
@@ -28,7 +28,7 @@ and a [Kakoune](http://kakoune.org) plugin: [`coderun.kak`](https://github.com/N
 
 ## Contents
 - [About](#about)
-- [Story](#story)
+  - [Story](#story)
 - [Contents](#contents)
 - [Setup](#setup)
   - [Dependencies](#dependencies)
