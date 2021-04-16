@@ -67,7 +67,7 @@ Run `coderun` in the terminal:
 coderun FILE
 ```
 
-> *NOTE: Coderun out of the box cannot run code, you need to [configure it](#configuration).*
+> *NOTE: Coderun out of the box cannot run code, you need to [configure it](#%EF%B8%8F-configuration).*
 
 ## ⚙️ Configuration
 Coderun is configured through environment variables: `export CODERUN_<extension>="<method>"`
