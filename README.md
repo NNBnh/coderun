@@ -3,14 +3,12 @@
 <p align="center"><a href="https://github.com/NNBnh/coderun/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
 <p align="center"><a href="https://github.com/NNBnh/coderun/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/network/members"><img src="https://img.shields.io/github/forks/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/issues"><img src="https://img.shields.io/github/issues/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
 
-## About
+## 💡 About
 **Coderun** is a code runner CLI that can run any languages.
 
-<p align="center"><a href="https://user-images.githubusercontent.com/43980777/108585543-92714300-737b-11eb-8296-1bf0cf79437f.mp4"><img src="https://user-images.githubusercontent.com/43980777/108586276-e7af5380-737f-11eb-9acd-c248b7a1c720.png"></a></p>
+https://user-images.githubusercontent.com/43980777/108585543-92714300-737b-11eb-8296-1bf0cf79437f.mp4
 
-###### [Click to watch demo](https://user-images.githubusercontent.com/43980777/108585543-92714300-737b-11eb-8296-1bf0cf79437f.mp4)
-
-### Story
+### 📔 Story
 After a long time searching for something like a CLI's version [Code Runner](https://github.com/formulahendry/vscode-code-runner) asking people on [r/kakoune](https://www.reddit.com/r/kakoune/comments/kuh4km/is_there_anything_like_code_runner_for_kakoune) and still doesn't find it, I decided to create my own with only **8 lines** of [`portable sh`](https://github.com/dylanaraps/pure-sh-bible):
 
 ```sh
@@ -26,24 +24,13 @@ exit 0
 
 and a [Kakoune](http://kakoune.org) plugin: [`coderun.kak`](https://github.com/NNBnh/coderun.kak).
 
-## Contents
-- [About](#about)
-  - [Story](#story)
-- [Contents](#contents)
-- [Setup](#setup)
-  - [Dependencies](#dependencies)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Credits](#credits)
-
-## Setup
-### Dependencies
+## 🚀 Setup
+### 🧾 Dependencies
 - `sh` to process
 - The language that you want to run (obviously)
 
-### Installation
-#### Manually
+### 📥 Installation
+#### 🔧 Manually
 - Option 1: using `curl`
 
 ```sh
@@ -58,7 +45,7 @@ git clone https://github.com/NNBnh/coderun.git ~/.local/share/coderun
 ln -s ~/.local/share/coderun/bin/coderun ~/.local/bin/coderun
 ```
 
-#### Package manager
+#### 📦 Package manager
 For [`bpkg`](https://github.com/bpkg/bpkg) user:
 
 ```sh
@@ -71,18 +58,18 @@ For [Basher](https://github.com/bpkg/bpkg) user:
 basher install NNBnh/coderun
 ```
 
-###### If you can and want to port Coderun to other package managers, feel free to do so.
+> *If you can and want to port Coderun to other package managers, feel free to do so.*
 
-## Usage
+## ⌨️ Usage
 Run `coderun` in the terminal:
 
 ```sh
 coderun FILE
 ```
 
-###### NOTE: Coderun out of the box cannot run code, you need to [configure it](#configuration).
+> *NOTE: Coderun out of the box cannot run code, you need to [configure it](#configuration).*
 
-## Configuration
+## ⚙️ Configuration
 Coderun is configured through environment variables: `export CODERUN_<extension>="<method>"`
 
 `<extension>`:
@@ -245,9 +232,9 @@ export CODERUN_for="$CODERUN_f"
 export CODERUN_f90="$CODERUN_f"
 ```
 
-###### This config is mostly ported from [Code Runner](https://github.com/formulahendry/vscode-code-runner/blob/101a718478136f5a7022fd4d4aaa22bf9a82176d/package.json#L127-L176).
+> *This config is mostly ported from [Code Runner](https://github.com/formulahendry/vscode-code-runner/blob/101a718478136f5a7022fd4d4aaa22bf9a82176d/package.json#L127-L176).*
 
-## Credits
+## 💌 Credits
 Special thanks to:
 - [**Code Runner**](https://github.com/formulahendry/vscode-code-runner) by [Jun Han](https://github.com/formulahendry)
 
