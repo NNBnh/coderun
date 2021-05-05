@@ -4,7 +4,7 @@
 <p align="center"><a href="https://github.com/NNBnh/coderun/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/network/members"><img src="https://img.shields.io/github/forks/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/issues"><img src="https://img.shields.io/github/issues/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
 
 ## 💡 About
-**Coderun** is a code runner CLI that can run any languages.
+**Coderun** is a code runner CLI written in [`portable sh`](https://github.com/dylanaraps/pure-sh-bible) that can run any languages.
 
 https://user-images.githubusercontent.com/43980777/108585543-92714300-737b-11eb-8296-1bf0cf79437f.mp4
 
