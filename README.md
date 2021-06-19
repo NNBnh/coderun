@@ -1,6 +1,6 @@
 <h1 align="center"><i>Coderun</i></h1>
 <p align="center">Code runner CLI that can run any languages</p>
-<p align="center"><a href="https://github.com/NNBnh/coderun/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
+<p align="center"><a href="https://github.com/NNBnh/coderun/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a> <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a></p>
 <p align="center"><a href="https://github.com/NNBnh/coderun/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/network/members"><img src="https://img.shields.io/github/forks/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/issues"><img src="https://img.shields.io/github/issues/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
 
 ## 💡 About
@@ -26,20 +26,18 @@ and a [Kakoune](http://kakoune.org) plugin: [`coderun.kak`](https://github.com/N
 
 ## 🚀 Setup
 ### 🧾 Dependencies
-- `sh` to process
+- [Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands) to process
 - The language that you want to run (obviously)
 
 ### 📥 Installation
 #### 🔧 Manually
-- Option 1: using `curl`
-
+Option 1: using `curl`
 ```sh
 curl https://raw.githubusercontent.com/NNBnh/coderun/main/bin/coderun > ~/.local/bin/coderun
 chmod +x ~/.local/bin/coderun
 ```
 
-- Option 2: using `git`
-
+Option 2: using `git`
 ```sh
 git clone https://github.com/NNBnh/coderun.git ~/.local/share/coderun
 ln -s ~/.local/share/coderun/bin/coderun ~/.local/bin/coderun
@@ -47,13 +45,11 @@ ln -s ~/.local/share/coderun/bin/coderun ~/.local/bin/coderun
 
 #### 📦 Package manager
 For [`bpkg`](https://github.com/bpkg/bpkg) user:
-
 ```sh
 bpkg install NNBnh/coderun
 ```
 
 For [Basher](https://github.com/bpkg/bpkg) user:
-
 ```sh
 basher install NNBnh/coderun
 ```
@@ -62,7 +58,6 @@ basher install NNBnh/coderun
 
 ## ⌨️ Usage
 Run `coderun` in the terminal:
-
 ```sh
 coderun FILE
 ```
@@ -91,7 +86,6 @@ Coderun is configured through environment variables: `export CODERUN_<extension>
 |`\$EXTENSION`|`               c`|File's extension|
 
 Examples:
-
 ```sh
 export CODERUN_="chmod +x \$FULL && \$FULL"
 export CODERUN_sh="$CODERUN_"
