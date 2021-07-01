@@ -1,7 +1,6 @@
 <h1 align="center"><i>Coderun</i></h1>
 <p align="center">Code runner CLI that can run any languages</p>
 <p align="center"><a href="https://github.com/NNBnh/coderun/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a> <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a></p>
-<p align="center"><a href="https://github.com/NNBnh/coderun/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/network/members"><img src="https://img.shields.io/github/forks/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/coderun/issues"><img src="https://img.shields.io/github/issues/NNBnh/coderun?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
 
 ## 💡 About
 **Coderun** is a code runner CLI written in [`portable sh`](https://github.com/dylanaraps/pure-sh-bible) that can run any languages.
