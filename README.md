@@ -230,6 +230,7 @@ export CODERUN_f90="$CODERUN_f"
 ## 💌 Credits
 Special thanks to:
 - [**Code Runner**](https://github.com/formulahendry/vscode-code-runner) by [Jun Han](https://github.com/formulahendry)
+- [**Case insensitive extension feature**](https://github.com/NNBnh/coderun/releases/tag/1.1.0) by [Elias Lundell](https://github.com/LogFlames)
 
 <br><br><br><br>
 
