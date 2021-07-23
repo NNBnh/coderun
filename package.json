@@ -1,6 +1,6 @@
 {
   "name": "coderun",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Code runner CLI that can run any languages",
   "global": "true",
   "scripts": ["bin/coderun"],
