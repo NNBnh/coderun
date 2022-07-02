@@ -1,13 +1,18 @@
 <h1 align="center"><i>Coderun</i></h1>
 <p align="center">Code runner CLI that can run any languages</p>
-<p align="center"><a href="https://github.com/NNBnh/coderun/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a> <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a></p>
+<p align="center">
+  <a href="https://github.com/NNBnh/coderun/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/coderun?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a>
+  <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a>
+</p>
 
 ## 💡 About
+
 **Coderun** is a code runner CLI written in [`portable sh`](https://github.com/dylanaraps/pure-sh-bible) that can run any languages.
 
 https://user-images.githubusercontent.com/43980777/108585543-92714300-737b-11eb-8296-1bf0cf79437f.mp4
 
 ### 📔 Story
+
 After a long time searching for something like a CLI's version [Code Runner](https://github.com/formulahendry/vscode-code-runner) asking people on [r/kakoune](https://www.reddit.com/r/kakoune/comments/kuh4km/is_there_anything_like_code_runner_for_kakoune) and still doesn't find it, I decided to create my own with only **8 lines** of [`portable sh`](https://github.com/dylanaraps/pure-sh-bible):
 
 ```sh
@@ -24,44 +29,54 @@ exit 0
 and a [Kakoune](http://kakoune.org) plugin: [`coderun.kak`](https://github.com/NNBnh/coderun.kak).
 
 ## 🚀 Setup
+
 ### 🧾 Dependencies
+
 - [Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands) to process
 - The language that you want to run (obviously)
 
 ### 📥 Installation
+
 #### 🔧 Manually
+
 Option 1: using `curl`
+
 ```sh
 curl https://raw.githubusercontent.com/NNBnh/coderun/main/bin/coderun > ~/.local/bin/coderun
 chmod +x ~/.local/bin/coderun
 ```
 
 Option 2: using `git`
+
 ```sh
 git clone https://github.com/NNBnh/coderun.git ~/.local/share/coderun
 ln -s ~/.local/share/coderun/bin/coderun ~/.local/bin/coderun
 ```
 
 #### 📦 Package manager
+
 For [Bpkg](https://github.com/bpkg/bpkg) user:
+
 ```sh
 bpkg install NNBnh/coderun
 ```
 
 For [Basher](https://github.com/basherpm/basher) user:
+
 ```sh
 basher install NNBnh/coderun
 ```
 
-> *If you can and want to port Coderun to other package managers, feel free to do so.*
+> **Note** *If you can and want to port Coderun to other package managers, feel free to do so.*
 
 ## ⌨️ Usage
+
 Run `coderun` in the terminal:
 ```sh
 coderun FILE
 ```
 
-> *NOTE: Coderun out of the box cannot run code, you need to [configure it](#%EF%B8%8F-configuration).*
+> **Note** *Coderun out of the box cannot run code, you need to [configure it](#%EF%B8%8F-configuration).*
 
 ## ⚙️ Configuration
 Coderun is configured through environment variables: `export CODERUN_<extension>="<method>"`
@@ -85,6 +100,7 @@ Coderun is configured through environment variables: `export CODERUN_<extension>
 |`\$EXTENSION`|`               c`|File's extension|
 
 Examples:
+
 ```sh
 export CODERUN_="chmod +x \$FULL && \$FULL"
 export CODERUN_sh="$CODERUN_"
@@ -224,7 +240,7 @@ export CODERUN_for="$CODERUN_f"
 export CODERUN_f90="$CODERUN_f"
 ```
 
-> *This config is mostly ported from [Code Runner](https://github.com/formulahendry/vscode-code-runner/blob/101a718478136f5a7022fd4d4aaa22bf9a82176d/package.json#L127-L176).*
+> **Note** *This config is mostly ported from [Code Runner](https://github.com/formulahendry/vscode-code-runner/blob/101a718478136f5a7022fd4d4aaa22bf9a82176d/package.json#L127-L176).*
 
 ## 💌 Credits
 Special thanks to:
